@@ -1,0 +1,41 @@
+Q1 embedding, same question/document vectors; only k changes.
+
+k=1
+A2 | access.txt | score=0.68644571
+T1 | training.txt | score=0.58195293
+B1 | booking.txt | score=0.53269613
+A1 | access.txt | score=0.37424895
+T2 | training.txt | score=0.27045220
+B2 | booking.txt | score=0.12873971
+Selected: A2
+[A2] (access.txt) The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+Required evidence coverage: 1/2; complete: False
+Added since previous k: A2
+
+k=2
+A2 | access.txt | score=0.68644571
+T1 | training.txt | score=0.58195293
+B1 | booking.txt | score=0.53269613
+A1 | access.txt | score=0.37424895
+T2 | training.txt | score=0.27045220
+B2 | booking.txt | score=0.12873971
+Selected: A2, T1
+[A2] (access.txt) The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+[T1] (training.txt) Laser training must be renewed every 12 months. A current training record is required before operating the laser.
+Required evidence coverage: 1/2; complete: False
+Added since previous k: T1
+
+k=3
+A2 | access.txt | score=0.68644571
+T1 | training.txt | score=0.58195293
+B1 | booking.txt | score=0.53269613
+A1 | access.txt | score=0.37424895
+T2 | training.txt | score=0.27045220
+B2 | booking.txt | score=0.12873971
+Selected: A2, T1, B1
+[A2] (access.txt) The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+[T1] (training.txt) Laser training must be renewed every 12 months. A current training record is required before operating the laser.
+[B1] (booking.txt) Laser room bookings are limited to two hours per session. Reserve the room through the equipment calendar.
+Required evidence coverage: 1/2; complete: False
+Added since previous k: B1
+Read the added passages and judge what useful conditions or irrelevant content they add.

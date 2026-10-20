@@ -1,0 +1,39 @@
+Actual local CPU run, UTC: 2026-10-20T17:14:51.659646+00:00
+Model: sentence-transformers/all-MiniLM-L6-v2
+Device: cpu
+Python: 3.14.8
+sentence-transformers: 6.1.0
+numpy: 2.5.4
+torch: 2.14.1
+transformers: 5.20.2
+huggingface-hub: 1.33.0
+Cached model revisions: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+Document matrix shape: (6, 384)
+All 384 coordinates are used; only the first 12 are displayed. Coordinates have no individual semantic labels.
+A1 first12=-0.0039 0.0188 0.0218 -0.0179 -0.0058 -0.0612 -0.0891 0.0321 -0.0584 0.0111 0.0031 -0.0123 length=1.00000000
+A2 first12=0.0298 -0.0435 -0.0289 0.0303 -0.0507 -0.0310 0.0361 -0.0391 -0.0322 -0.0424 0.0498 0.0019 length=1.00000012
+T1 first12=0.0063 -0.0708 0.0345 0.0146 -0.1167 -0.0114 -0.0708 -0.0761 -0.0806 -0.0767 0.0325 0.1357 length=1.00000000
+T2 first12=0.0447 -0.0044 0.0042 -0.0058 0.0211 -0.0151 -0.0108 -0.0301 -0.0191 -0.0234 0.0280 -0.0367 length=1.00000000
+B1 first12=0.0856 -0.0417 -0.0194 0.0377 -0.0668 -0.0053 -0.0260 -0.0618 -0.0186 -0.0023 -0.0050 0.0659 length=1.00000000
+B2 first12=0.0673 0.0924 -0.0079 0.0634 -0.0105 0.0043 -0.0020 -0.0750 0.0667 0.0378 -0.0040 0.0335 length=1.00000000
+Question: May a trained graduate student operate the laser alone at 19:00?
+Question vector shape: (384,)
+Query first12=0.0485 0.0060 -0.0148 -0.0017 -0.0642 -0.0427 0.0008 -0.0575 -0.0771 -0.0306 0.0749 0.0967 length=1.00000000
+A2 | access.txt | score=0.68644571
+T1 | training.txt | score=0.58195293
+B1 | booking.txt | score=0.53269613
+A1 | access.txt | score=0.37424895
+T2 | training.txt | score=0.27045220
+B2 | booking.txt | score=0.12873971
+Selected: A2, T1
+[A2] (access.txt) The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+[T1] (training.txt) Laser training must be renewed every 12 months. A current training record is required before operating the laser.
+Q1 top passage: A2
+First12 products: 0.0014 -0.0003 0.0004 -0.0001 0.0033 0.0013 0.0000 0.0023 0.0025 0.0013 0.0037 0.0002
+First12 subtotal: 0.01611150
+Remaining372 subtotal: 0.67033422
+Full dot product: 0.68644571
+Direct cosine: 0.68644563
+Agreement atol=1e-6: True
+Displayed minimum (ID, coordinate, value): ('T1', 5, -0.1166914850473404)
+Displayed maximum (ID, coordinate, value): ('T1', 12, 0.1356774866580963)

@@ -1,0 +1,10 @@
+Model: sentence-transformers/all-MiniLM-L6-v2
+Device: cpu
+Python: 3.14.8
+sentence-transformers: 6.1.0
+numpy: 2.5.4
+torch: 2.14.1
+transformers: 5.20.2
+huggingface-hub: 1.33.0
+Cached model revisions: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+Document matrix shape: (6, 384)
