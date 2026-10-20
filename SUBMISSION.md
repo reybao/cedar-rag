@@ -10,6 +10,6 @@ Completed: six original source passages; keyword and real MiniLM retrievers; ver
 
 Individual reflection is intentionally pending, as requested. Add it to this repository before the course deadline.
 
-Only the first Q1 response is retained as requested. Its missing access-time disclosure is recorded; the assignment's requested instruction revision/retry is not included. No successful correction is claimed.
+Both the original Q1 answer and a revised answer are retained with the added instruction, claim audits, and a before/after comparison. The revision successfully acknowledges missing access-time evidence without changing retrieved passages.
 
-Responses were supplied by Rey; audits and comparison judgments were prepared with Codex assistance. No personal reflection has been written by Codex.
+Responses and the revision assessment were supplied by Rey. AI assistance is disclosed in README.md. No individual reflection has been generated or included.

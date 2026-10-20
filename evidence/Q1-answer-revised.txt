@@ -1,0 +1,11 @@
+No. The laser requires two trained people to be present whenever it operates, so a graduate student may not operate it alone at 19:00. [A2] Operating also requires a current training record, with training renewed every 12 months; the question does not establish whether the student meets this requirement. [T1]
+
+The passages **do not establish whether 19:00 falls within general laboratory access hours**; no access schedule is supplied. This does not change the two-person requirement, which applies whenever the laser operates. [A2]
+
+Claim audit:
+
+- Two trained people must be present whenever the laser operates: supported by [A2].
+- Solo operation at 19:00 is prohibited: supported by [A2].
+- Training renewal every 12 months and a current training record are required: supported by [T1].
+- This student’s training record is current: unsupported; not supplied.
+- 19:00 is within general laboratory access hours: unsupported; no access schedule is supplied.

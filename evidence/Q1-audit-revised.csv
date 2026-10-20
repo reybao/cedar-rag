@@ -1,0 +1,6 @@
+factual_claim,cited_id,support,judgment,reasoning
+Two trained people must be present whenever the laser operates,A2,requires two trained people to be present whenever the laser is operating,supported,The operating condition is retained.
+Solo operation at 19:00 is prohibited,A2,whenever the laser is operating,supported,The universal operating condition applies at this time too; access permission remains separate.
+Training renewal every 12 months and a current record are required,T1,Laser training must be renewed every 12 months. A current training record is required before operating the laser.,supported,Both requirements are stated in T1.
+The student has a current training record,none,No individual record is supplied,not established; correctly flagged,The response does not assert current qualification.
+The supplied passages do not establish access hours at 19:00,A2;T1,Inspection: neither passage states the access-hour range,supported by inspection,The revision explicitly acknowledges missing access-time evidence without importing A1.

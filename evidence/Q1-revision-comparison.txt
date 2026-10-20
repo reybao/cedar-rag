@@ -1,0 +1,17 @@
+Q1 instruction revision and outcome
+
+Question and evidence unchanged: Q1 with A2 and T1, embedding retrieval k=2.
+Original prompt: handoff/Q1-prompt.txt
+Revised prompt: handoff/Q1-prompt-revised.txt
+Added instruction:
+Explicitly identify whether the supplied passages establish the access-hours condition at 19:00. Do not infer the hours from outside knowledge.
+
+Original response: evidence/Q1-answer-original.txt
+The response correctly prohibits solo operation and states training requirements, but does not explicitly acknowledge that the supplied evidence lacks an access schedule.
+
+Revised response: evidence/Q1-answer-revised.txt
+The response retains the supported operating and training requirements and explicitly states that access at 19:00 cannot be established from the supplied passages. It does not import the missing A1 schedule.
+
+Outcome: The instruction revision improved missing-evidence disclosure. It did not change retrieval or repair the missing A1 evidence. Retrieval coverage remains 1/2.
+Student assessment: After revising the instruction, the answer explicitly acknowledged missing access-time evidence; the change was effective.
+Both original and revised responses were provided by Rey and are preserved verbatim.

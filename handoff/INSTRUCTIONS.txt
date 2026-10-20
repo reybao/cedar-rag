@@ -1,9 +1,9 @@
-Task 4 requires two fresh answer conversations, each seeing only its question, selected passages, and the exact assignment instruction. Do not use this existing course conversation: it has seen the whole corpus.
+Answer handoff records
 
-After a successful experiment run, open Q1-prompt.txt and Q4-prompt.txt. Paste each into a separate fresh Codex conversation without project-file access. Save the entire original responses to evidence/Q1-answer-original.txt and evidence/Q4-answer-original.txt.
+Q1-prompt.txt and Q4-prompt.txt contain the original prompts: question, selected passages, and the assignment answer instruction. Each is intended for a separate fresh answer conversation without access to project files or additional evidence.
 
-For each response, make an audit with columns: factual claim | cited ID | exact supporting text | supported/unsupported/missing condition | your reasoning. Verify operating conditions and any missing time evidence for Q1. For Q4 verify the response says the wavelength is unspecified in the supplied passages.
+Q1-prompt-revised.txt keeps Q1 and the same A2/T1 passages and adds an explicit access-hours evidence check.
 
-If an answer fails: keep it, revise the instruction once, rerun in a fresh conversation with the same selected passages, and save revised instruction, revised output, and whether it helped. Do not conceal the failure.
+Original and revised Q1 outputs, Q4 output, and completed claim audits are stored in evidence/. Q1-revision-comparison.txt explains what changed and whether it helped.
 
-These are instructions, not completed answer audits. Write your own individual reflection and make the final evidence judgments yourself.
+The individual reflection is not included and must be written by the student.
