@@ -65,7 +65,7 @@ Q1's stated claims are supported, but it does not explicitly acknowledge missing
 
 The individual reflection is intentionally not written. Rey must write at most 150 words explaining the question-to-cited-answer path, one observed limitation, and one proposed next experiment.
 
-Repository publication and course-sheet submission are tracked in `SUBMISSION.md`. The official [course Sign Up Sheet](https://docs.google.com/spreadsheets/d/1ZewIG5udWWpk3Kdrab5yDbsWDV4gnH3liKobIAp7HG4/edit?usp=sharing) was extracted from the assignment's actual hyperlink.
+The public [GitHub repository](https://github.com/reybao/cedar-rag) has been submitted to Sheet1!R16 (Rey Bao, PS5 Repo) on October 20, 2026; details are tracked in `SUBMISSION.md`. The official [course Sign Up Sheet](https://docs.google.com/spreadsheets/d/1ZewIG5udWWpk3Kdrab5yDbsWDV4gnH3liKobIAp7HG4/edit?usp=sharing) was extracted from the assignment's actual hyperlink.
 
 No retrieval output is borrowed. Installation errors are retained in logs; successful real model outputs are stored separately. Re-running `run_experiments.py` rewrites generated experiment files and resets CSV judgment columns, so preserve completed annotations before rerunning.
 
