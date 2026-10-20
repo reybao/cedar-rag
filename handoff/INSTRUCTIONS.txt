@@ -6,4 +6,4 @@ Q1-prompt-revised.txt keeps Q1 and the same A2/T1 passages and adds an explicit 
 
 Original and revised Q1 outputs, Q4 output, and completed claim audits are stored in evidence/. Q1-revision-comparison.txt explains what changed and whether it helped.
 
-The individual reflection is not included and must be written by the student.
+The individual reflection is included in README.md.

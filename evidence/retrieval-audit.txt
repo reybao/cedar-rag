@@ -1,4 +1,4 @@
-Evidence judgments from the recorded real run. AI assistance is disclosed in README.md.
+Evidence judgments from the recorded real run.
 Q1: Keyword A1+A2 has 2/2 required coverage. Embedding A2+T1 has 1/2, even though A2 is enough for a no to operating alone. Its missing A1 prevents the full time-and-operating explanation.
 Q2: Both methods include A2: coverage 1/1. Embedding A2 score 0.58519334 is a useful paraphrase match.
 Q3: Both include T1: coverage 1/1. Embedding T1 score 0.74202746 is a useful match between refresh qualification and renewed training.

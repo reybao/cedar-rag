@@ -4,11 +4,11 @@ PS05 compares exact keyword overlap with real local MiniLM embeddings over six f
 
 ## Status and authors
 
-- AI assistance: Codex helped implement the retrievers and prepare evidence audits. Answer outputs and the revision assessment were supplied by Rey.
+- Assistance disclosure: Codex helped implement the code and prepare audits. The reflection below expresses Rey's observations and proposed experiment, with English wording edited by Codex.
 - Student: **Rey**. Listed author: Rey; no partner has been listed.
 - Evidence judgments and rationale: `results.csv` and `evidence/retrieval-audit.txt`.
 - Q1 original/revised answers, Q4 answer, and claim audits: saved in `evidence/`. The Q1 instruction revision and before/after comparison are included.
-- Individual reflection: write yourself, at most 150 words per person; do not have Codex write it.
+- Individual reflection: included below (under 150 words).
 
 ## Setup and commands
 
@@ -67,7 +67,7 @@ The source documents, retrievers, real vector inspection, four-question comparis
 
 The original Q1 response omits explicit acknowledgement of missing access-hours evidence. Adding an instruction to check the access-hours condition at 19:00 fixes that omission in the revised response, using the same A2/T1 passages. Both versions, the revised prompt, and a before/after comparison are retained. The instruction improves answer disclosure, while retrieval coverage remains 1/2. Q4 correctly reports that the wavelength is unspecified in its supplied evidence.
 
-The individual reflection is intentionally not written. Rey must write at most 150 words explaining the question-to-cited-answer path, one observed limitation, and one proposed next experiment.
+The individual reflection below covers the question-to-cited-answer path, an observed limitation, and a proposed experiment.
 
 The public [GitHub repository](https://github.com/reybao/cedar-rag) has been submitted to Sheet1!R16 (Rey Bao, PS5 Repo) on October 20, 2026; details are tracked in `SUBMISSION.md`. The official [course Sign Up Sheet](https://docs.google.com/spreadsheets/d/1ZewIG5udWWpk3Kdrab5yDbsWDV4gnH3liKobIAp7HG4/edit?usp=sharing) was extracted from the assignment's actual hyperlink.
 
@@ -91,3 +91,7 @@ The saved run selected the following top-two IDs (read the full logs and make yo
 | Q4 | A2, B1 | T1, A2 |
 
 For Q1 the embedding ranking places A1 fourth, so k=1,2,3 all cover only one of the two required chunks. Moving from k=1 to 2 adds T1's training condition; moving to 3 adds B1's booking rule. Neither adds the missing access-hours rule. In the current run the displayed coordinate extrema are T1 coordinate 5 (minimum) and T1 coordinate 12 (maximum); neither coordinate has a standalone meaning.
+
+## Individual reflection — Rey
+
+This project showed me how retrieved passages become evidence for a cited answer. Keyword matching achieved better required-evidence coverage in this experiment: it retrieved both A1 and A2 for Q1, while embedding retrieval missed A1 at k=2 and k=3. This surprised me. A2 supported the conclusion that solo operation was prohibited, but the retrieved evidence lacked the schedule needed to explain access at 19:00. I learned that a correct conclusion does not necessarily mean complete evidence coverage. RAG can help reduce hallucinations, but retrieved passages may be incomplete and answers still require auditing. Next, I would combine normalized keyword and embedding scores with different weights. I would check whether this retrieves both A1 and A2 at k=2 while retaining the required evidence for Q2 and Q3.
