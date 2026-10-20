@@ -5,9 +5,9 @@ PS05 compares exact keyword overlap with real local MiniLM embeddings over six f
 ## Status and authors
 
 - Implementation and experiment scripts: created with Codex assistance.
-- Student: **Rey**. No partner name has been provided; confirm individual work or add the partner before submission.
-- Human judgments in `results.csv`: deliberately blank until the student audits the actual output.
-- Q1/Q4 fresh-conversation answers and audits: complete using `handoff/` instructions.
+- Student: **Rey**. Listed author: Rey; no partner has been listed.
+- Evidence judgments in `results.csv`: completed with Codex assistance; rationale is in `evidence/retrieval-audit.txt`.
+- Q1/Q4 original answers supplied by Rey and claim audits: saved in `evidence/`. Only the first Q1 version is retained at Rey's request. Its access-hours disclosure omission remains documented; no revised instruction/retry is submitted.
 - Individual reflection: write yourself, at most 150 words per person; do not have Codex write it.
 
 ## Setup and commands
@@ -50,22 +50,24 @@ For verified line numbers on your checkout, run `nl -ba retriever.py`. `run_expe
 - `evidence/retrieval-runs.txt`: four questions through both methods at k=2.
 - `evidence/k-experiment.txt`: Q1 at k=1,2,3, selected passages and required evidence coverage.
 - `evidence/rankings.json`: full stored scores for selected passages.
-- `results.csv`: four comparison rows, with three judgment columns left blank for the student.
+- `results.csv`: four comparison rows with completed evidence judgments and observations.
 - `handoff/Q1-prompt.txt`, `handoff/Q4-prompt.txt`: paste each into a separate fresh answer conversation, without project access or extra material.
 
 Q1 needs A1 and A2 for complete evidence, Q2 needs A2, Q3 needs T1. Q4 has no wavelength in the corpus. A positive similarity is not proof that an answer exists. Keyword scores count words; embedding scores measure vector alignment, so their numeric scales cannot be compared directly.
 
 For a manual keyword check, Q1 and A1 share `00`, `graduate`, and `trained`: score 3. Repeating a query word does not add points. The `00` match illustrates a lexical artifact: 19:00 and the access times produce the same token. `student` and `students` remain different words. Q1 keyword selection is A1 then A2.
 
-## Finish and submit
+## Completion and submission status
 
-1. Read the actual outputs and fill the two evidence-complete columns and observation in `results.csv`. For Q4 record missing information, not a retrieval success.
-2. Inspect k experiment additions and explain their actual contribution.
-3. Generate Q1 and Q4 in separate fresh conversations using the prepared prompts; save original answers and your claim-by-claim audits in `evidence/`. If a response fails, retain it, revise the instruction once, rerun with the same passages, and record the result.
-4. Add names and your own individual reflection (at most 150 words each).
-5. Push this repository to a same-named GitHub repository, then submit its link to the course Sign Up Sheet. The source handout's sheet URL is not reproduced here; use the course link.
+The source documents, retrievers, real vector inspection, four-question comparison, k experiment, original Q1/Q4 answers and claim audits are saved. See `evidence/answer-audit-summary.txt` for response provenance and limitations.
 
-No output is borrowed. Installation errors are retained in logs; only successful model output should be used as embedding evidence. Re-running `run_experiments.py` rewrites generated experiment files and resets CSV judgment columns, so preserve any completed human annotations before rerunning.
+Q1's stated claims are supported, but it does not explicitly acknowledge missing access-hours evidence. At the student's request only the first Q1 version is included. The assignment's required instruction revision/retry following a failed answer audit is not documented. Q4 correctly reports that the wavelength is not specified in its supplied evidence.
+
+The individual reflection is intentionally not written. Rey must write at most 150 words explaining the question-to-cited-answer path, one observed limitation, and one proposed next experiment.
+
+Repository publication and course-sheet submission are tracked in `SUBMISSION.md`. The official [course Sign Up Sheet](https://docs.google.com/spreadsheets/d/1ZewIG5udWWpk3Kdrab5yDbsWDV4gnH3liKobIAp7HG4/edit?usp=sharing) was extracted from the assignment's actual hyperlink.
+
+No retrieval output is borrowed. Installation errors are retained in logs; successful real model outputs are stored separately. Re-running `run_experiments.py` rewrites generated experiment files and resets CSV judgment columns, so preserve completed annotations before rerunning.
 
 ## References
 
@@ -84,4 +86,4 @@ The saved run selected the following top-two IDs (read the full logs and make yo
 | Q3 | T1, A2 | T1, B1 |
 | Q4 | A2, B1 | T1, A2 |
 
-For Q1 the embedding ranking places A1 fourth, so k=1,2,3 all cover only one of the two required chunks. Moving from k=1 to 2 adds T1's training condition; moving to 3 adds B1's booking rule. Neither adds the missing access-hours rule. These are Codex-provided observations of the actual output, not a substitute for the student's audit. In the current run the displayed coordinate extrema are T1 coordinate 5 (minimum) and T1 coordinate 12 (maximum); neither coordinate has a standalone meaning.
+For Q1 the embedding ranking places A1 fourth, so k=1,2,3 all cover only one of the two required chunks. Moving from k=1 to 2 adds T1's training condition; moving to 3 adds B1's booking rule. Neither adds the missing access-hours rule. These observations and CSV judgments were prepared with Codex assistance. In the current run the displayed coordinate extrema are T1 coordinate 5 (minimum) and T1 coordinate 12 (maximum); neither coordinate has a standalone meaning.

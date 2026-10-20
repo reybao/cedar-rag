@@ -1,0 +1,3 @@
+factual_claim,cited_id,exact_supporting_text_or_inspection,judgment,reasoning
+The supplied passages do not specify the laser wavelength,T1;A2,T1 discusses training renewal/current records; A2 discusses two trained people during operation. Neither states a wavelength.,supported by inspection,"This is a bounded statement about supplied evidence, not a claim that no wavelength exists."
+The laser wavelength cannot be determined from these passages,T1;A2,No wavelength is present in either supplied passage.,supported,The response appropriately withholds a numerical answer; no unsupported outside facts appear.

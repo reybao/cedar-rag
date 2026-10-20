@@ -1,0 +1,5 @@
+The laser wavelength cannot be determined from the supplied passages. Neither [T1] nor [A2] specifies a wavelength.
+
+Factual claim audit:
+
+- The supplied passages do not specify the laser wavelength — supported by inspection of [T1] and [A2].

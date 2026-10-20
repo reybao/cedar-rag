@@ -1,0 +1,6 @@
+factual_claim,cited_id,exact_supporting_text_or_inspection,judgment,reasoning
+The student may not operate the laser alone at 19:00,A2,The laser room requires two trained people to be present whenever the laser is operating,supported,The rule applies whenever the laser operates; this does not establish permission to access the laboratory at 19:00.
+Two trained people are required including during general access hours,A2,including during general laboratory access hours.,supported,The answer retains the two-trained-people operating condition.
+Training must be renewed every 12 months; a current record is required,T1,Laser training must be renewed every 12 months. A current training record is required before operating the laser.,supported,Both conditions match the supplied text.
+The student has current training,T1,A current training record is required before operating the laser.,not established; correctly flagged,The answer explicitly marks this proposition unsupported; it does not assert that training is current.
+Whether access at 19:00 is permitted,none,Neither supplied passage states the actual access-hour range.,missing condition not acknowledged,The answer should explicitly state that the supplied passages do not establish access permission at 19:00. A1 was not retrieved.

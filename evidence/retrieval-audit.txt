@@ -1,0 +1,6 @@
+Evidence judgments prepared with Codex assistance from the recorded real run.
+Q1: Keyword A1+A2 has 2/2 required coverage. Embedding A2+T1 has 1/2, even though A2 is enough for a no to operating alone. Its missing A1 prevents the full time-and-operating explanation.
+Q2: Both methods include A2: coverage 1/1. Embedding A2 score 0.58519334 is a useful paraphrase match.
+Q3: Both include T1: coverage 1/1. Embedding T1 score 0.74202746 is a useful match between refresh qualification and renewed training.
+Q4: No source specifies wavelength. Positive similarities are relative alignment, not answerability. The retriever must return two passages in this exercise, so missing information must be identified by inspecting the evidence and answer.
+Q1 k experiment: k=1 selects A2; k=2 adds T1; k=3 adds B1. All have coverage 1/2. T1 adds a valid training prerequisite, and B1 adds booking conditions, but neither supplies the missing access-hour range. Larger k did not restore complete required evidence in these tested settings.
